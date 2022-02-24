@@ -1,0 +1,116 @@
+/* /////////////////////////card */
+.section-card ul {
+   
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  
+}
+.section-card ul li{
+    width: 280px;
+    height: 350px;
+    border-radius: 20px;
+    border: 2px solid rgb(148,106,240);
+    background: rgb(33,41,64);
+    background: linear-gradient(180deg, rgba(33,41,64,1) 0%, rgba(33,41,64,1) 39%, rgba(148,106,240,1) 100%);
+    
+}
+.section-card ul li:nth-child(2n+0){
+   
+    transform: translate(0, -50px);
+    background: rgb(148,106,240);
+    background: linear-gradient(180deg, rgba(148,106,240,1) 0%, rgba(33,41,64,1) 78%, rgba(33,41,64,1) 100%);
+}
+
+
+/* /////////////////////////// */
+.arrow-1,
+.arrow-1::before{
+  position: absolute;
+  /* left: 50%; */
+  
+}
+
+.arrow-1{
+  width: 20px;
+  height: 20px;
+  left: 270px;
+ 
+  margin: -20px 0 0 -20px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+   cursor: pointer;
+   transform: translate(0, -50px) rotate(140deg);
+}
+/*  */
+  
+.arrow-1:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    /* top: 50%; */
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow-1;
+}
+
+  
+@keyframes arrow-1 {
+    0%{
+    opacity: 1;}
+  100%{
+    opacity: 0;
+    transform: translate(-10px, -10px);}
+}
+.arrow-2,
+.arrow-2::before{
+  position: absolute;
+  /* left: 50%; */
+  
+}
+.arrow-2{
+    width: 20px;
+    height: 20px;
+    right: 250px;
+    /* left: 68%; */
+    margin: -20px 0 0 -20px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    cursor: pointer;
+    transform: translate(0, -50px) rotate(320deg);
+  }
+  /* translate(80px) */
+  .arrow-2:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      /* top: 50%; */
+      margin: -10px 0 0 -10px;
+      border-left: none;
+      border-top: none;
+      border-right: 1px #fff solid;
+      border-bottom: 1px #fff solid;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: arrow-2;
+  }
+  
+    
+  @keyframes arrow-2 {
+      0%{
+      opacity: 1;}
+    100%{
+      opacity: 0;
+      transform: translate(-10px, -10px);}
+  }
