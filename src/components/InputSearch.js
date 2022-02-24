@@ -1,17 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import { useForm } from "../hooks/useForm"
 
 import '../styles/inputStyles.css'
 
 export const InputSearch = () => {
 
-    const [values, handleInputChange, reset] = useForm({
+    const navigate = useNavigate();
+    const [{name}, handleInputChange, reset] = useForm({
         name: ''
     });
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(values)
+        console.log(name)
         reset()
+        navigate(`/search?q=${name}`)
     }
     return (
         <>
@@ -23,7 +26,7 @@ export const InputSearch = () => {
                     name='name'
                     autoComplete='off'
                     placeholder='SEARCH'
-                    value={values.name}
+                    value={name}
                     onChange={handleInputChange}
                 ></input>
 
