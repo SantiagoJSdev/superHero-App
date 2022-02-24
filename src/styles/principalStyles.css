@@ -65,4 +65,34 @@ body {
     background: #212940;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+/* /////////////////////////card */
+.section-card ul {
+   
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  
+}
+.section-card ul li{
+    width: 280px;
+    height: 350px;
+    border-radius: 20px;
+    border: 2px solid rgb(148,106,240);
+    background: rgb(33,41,64);
+    background: linear-gradient(180deg, rgba(33,41,64,1) 0%, rgba(33,41,64,1) 39%, rgba(148,106,240,1) 100%);
+    
+}
+.section-card ul li:nth-child(2n+0){
+   
+    transform: translate(0, -50px);
+    background: rgb(148,106,240);
+    background: linear-gradient(180deg, rgba(148,106,240,1) 0%, rgba(33,41,64,1) 78%, rgba(33,41,64,1) 100%);
 }

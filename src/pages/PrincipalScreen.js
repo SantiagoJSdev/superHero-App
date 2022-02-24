@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { addData } from "../action/dataAction";
 import { InputSearch } from "../components/InputSearch";
+import { heroes } from "../data/heroes";
 
 import '../styles/principalStyles.css'
 
@@ -26,7 +27,17 @@ export const PrincipalScreen = () => {
             <InputSearch/>
 
           </div>
-          <div className="section-dashboard"></div>
+          <div className="section-dashboard">
+            
+              <div className="section-card">
+                <ul>
+                {heroes.map(ele=> (
+                  <li key={ele.id}>{ele.superhero}</li>
+                ))}
+                </ul>
+              </div>
+
+          </div>
         </section>
         <footer className="principal-footer"></footer>
         <button onClick={handleClick}>add</button>

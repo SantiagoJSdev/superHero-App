@@ -6,7 +6,7 @@ import '../styles/inputStyles.css'
 export const InputSearch = () => {
 
     const navigate = useNavigate();
-    const [{name}, handleInputChange, reset] = useForm({
+    const [{ name }, handleInputChange, reset] = useForm({
         name: ''
     });
 
