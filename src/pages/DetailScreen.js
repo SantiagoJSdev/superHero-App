@@ -1,5 +1,5 @@
 
-import React from 'react'
+import '../styles/detailStyles.css'
 
 export const DetailScreen = () => {
   return (

@@ -4,7 +4,7 @@
 
 
 export const getHeroeByName = (data, name) => {
-    if ( name === '' ) {
+    if ( name === '' || !data) {
         return [];
     }
 

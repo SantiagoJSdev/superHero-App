@@ -1,0 +1,104 @@
+
+
+:root {
+ 
+    --width: 600px;
+    --height: 600px;
+}
+
+
+.contain-principal{
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    justify-content: center;
+
+    perspective: 600px;
+    
+}
+.contain {
+    width: var(--width);
+    height: var(--height);
+ 
+    background: transparent;
+    border-radius: 20px;
+
+        box-shadow: 
+        
+        0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0.4);
+  
+        perspective: 1000px;
+        
+        transition: transform 1.8s;
+        transform-style: preserve-3d;
+        position: relative;
+}
+
+.contain-principal  H1{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    letter-spacing: -3px;
+    padding: 6px 16px;
+}
+.contain-principal  .footer {
+    color: wheat;
+    align-self: flex-end;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 3px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+.card__face--front{
+
+    background: 
+     linear-gradient(
+        135deg,
+        rgba(33,41,64,1) 0 30%,
+        rgba(33,41,64,1) 30% 35%,
+        rgba(33,41,64,1) 35% 40%, 
+        rgba(148,106,240,1) 40% 45%, 
+        rgba(148,106,240,1) 45% 50%,
+        rgba(148,106,240,1) 50% 100% );
+        background-blend-mode: darken, normal, normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 
+        0 0 20px 10px #000c inset;
+        border-radius: 20px;
+        
+}
+
+.card__face--back {
+   
+    transform: rotateY( 180deg );
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
+.contain-img{
+    width: 400px;
+    height: 450px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.contain-img >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

@@ -8,9 +8,88 @@ body {
 
 .container-search{
     width: 100%;
-    height: 1000px;
+    height: 100%;
     background: #1A2038;
     display: flex;
     flex-direction: column;
     
+}
+.search-interno{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputCard {
+    margin-top: 80px;
+}
+.inputCard-interno{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.search-btn1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    
+}
+.search-button{
+    width: 130px;
+    height: 50px;
+    margin-right: 100px;
+    transform: translate(0px, -30px);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+    background: 
+    linear-gradient(
+       135deg,
+       rgba(148,106,240,1) 0 30%,
+       rgba(148,106,240,1) 30% 35%,
+       rgba(148,106,240,1) 35% 40%, 
+       rgba(33,41,64,1) 40% 45%, 
+       rgba(33,41,64,1) 45% 50%,
+       rgba(33,41,64,1) 50% 100% );
+       background-blend-mode: darken, normal, normal;
+}
+.Loading{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animation-loading{
+    display: flex;
+    justify-content: center;
+}
+.animation-loading > div {
+    width: 16px;
+    height: 16px;
+    margin: 3rem 0.2rem;
+    background: #0047ff;
+    border-radius: 50%;
+    animation: animation-loading 0.6s infinite alternate;
+}
+
+.animation-loading > div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.animation-loading > div:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+@keyframes animation-loading {
+    to {
+        opacity: 0.1;
+        transform: translate3d(0, 16px, 0);
+    }
 }

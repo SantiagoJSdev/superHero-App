@@ -3,7 +3,7 @@ import { useForm } from "../hooks/useForm"
 
 import '../styles/inputStyles.css'
 
-export const InputSearch = () => {
+export const InputSearch = ({className}) => {
 
     const navigate = useNavigate();
     const [{ name }, handleInputChange, reset] = useForm({
@@ -21,7 +21,7 @@ export const InputSearch = () => {
             <form onSubmit={handleSubmit}>
 
                 <input
-                    className='search-input'
+                    className={`search-input ${className}`}
                     type='text'
                     name='name'
                     autoComplete='off'
@@ -30,7 +30,7 @@ export const InputSearch = () => {
                     onChange={handleInputChange}
                 ></input>
 
-                <button className='search-btn' type='submit'></button>
+                <button className={`search-btn ${className}`} type='submit'></button>
             </form>
 
         </>
