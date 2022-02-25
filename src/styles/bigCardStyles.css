@@ -102,3 +102,14 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+.contain-description {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+}
+.hero-description{
+    display: flex;
+    gap: 30px;
+}
