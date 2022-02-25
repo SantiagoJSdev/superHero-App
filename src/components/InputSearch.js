@@ -3,18 +3,19 @@ import { useForm } from "../hooks/useForm"
 
 import '../styles/inputStyles.css'
 
-export const InputSearch = ({className}) => {
+export const InputSearch = ({ className }) => {
 
     const navigate = useNavigate();
-    const [{ name }, handleInputChange, reset] = useForm({
+    const [{ name }, handleInputChange, reset, error] = useForm({
         name: ''
     });
-
+   
     const handleSubmit = (e) => {
         e.preventDefault()
-     
-        reset()
-        navigate(`/search?q=${name}`)
+        if (!Object.keys(error).length && name.length !== 0) {
+            reset()
+            navigate(`/search?q=${name}`)
+        }
     }
     return (
         <>
@@ -29,6 +30,7 @@ export const InputSearch = ({className}) => {
                     value={name}
                     onChange={handleInputChange}
                 ></input>
+                <div className={(!Object.keys(error).length) ? 'createValidation' : 'createValidation active'}>{error.name}</div>
 
                 <button className={`search-btn ${className}`} type='submit'></button>
             </form>
