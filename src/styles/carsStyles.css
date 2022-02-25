@@ -1,4 +1,6 @@
 /* /////////////////////////card */
+
+
 .section-card ul {
    
     display: flex;
@@ -10,12 +12,12 @@
 }
 .section-card ul li{
     width: 280px;
-    height: 350px;
+    height: 450px;
     border-radius: 20px;
     border: 2px solid rgb(148,106,240);
     background: rgb(33,41,64);
     background: linear-gradient(180deg, rgba(33,41,64,1) 0%, rgba(33,41,64,1) 39%, rgba(148,106,240,1) 100%);
-    
+    position: relative;
 }
 .section-card ul li:nth-child(2n+0){
    
@@ -23,8 +25,64 @@
     background: rgb(148,106,240);
     background: linear-gradient(180deg, rgba(148,106,240,1) 0%, rgba(33,41,64,1) 78%, rgba(33,41,64,1) 100%);
 }
+.section-card ul li a{
+color: white;
+text-decoration: none;
+}
+.section-card ul li h2{
+  position: absolute;
+  right: -15px;
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  margin-top: 10px;
+  
+  /* text-orientation: unset; */
+  
+  }
+  .section-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+  .barra {
+    width: 65%;
+    height: 16px;
+    border: 2px solid white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    display: flex;
 
-
+  }
+  .powerStars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+  }
+  .powerStars p{
+    width: 80px;
+    margin-left: 5px;
+    /* border: 2px solid red; */
+  }
+  .relleno{
+    width: 90%;
+    height: 98%;
+    background: red;
+    border-radius: 20px;
+  }
+  .div-interno{
+    display: flex;
+    height: 26px;
+    width: 100%;
+    align-items: center;
+    
+  }
 /* /////////////////////////// */
 .arrow-1,
 .arrow-1::before{
@@ -44,7 +102,7 @@
   border-right: 2px #fff solid;
   border-bottom: 2px #fff solid;
    cursor: pointer;
-   transform: translate(0, -50px) rotate(140deg);
+   transform: translate(0, -20px) rotate(140deg);
 }
 /*  */
   
@@ -88,7 +146,7 @@
     border-right: 2px #fff solid;
     border-bottom: 2px #fff solid;
     cursor: pointer;
-    transform: translate(0, -50px) rotate(320deg);
+    transform: translate(0, -20px) rotate(320deg);
   }
   /* translate(80px) */
   .arrow-2:before {

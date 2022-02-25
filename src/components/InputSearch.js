@@ -12,7 +12,7 @@ export const InputSearch = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(name)
+     
         reset()
         navigate(`/search?q=${name}`)
     }
