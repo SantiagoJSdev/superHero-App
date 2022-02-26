@@ -35,3 +35,5 @@ You may also see any lint errors in the console.
 9. Realizando los filtros para que el usuario decida el orden en el que aparecerán las habilidades voy a crear una funcion en la carpeta selector llamada getPowerStrength.js que filtra y ordena por habilidad strength y  luego hago una accion para almacenar en mi estado el array ordenado y mostrar los datos.
 
 10. realice todas las funciones desde la carpeta selector para filtrar y ordenar por sus habilidades, ademas filtro alfabeticamente, creo sus acciones para luego ser despachadas cuando el usuario lo requiera.
+
+11. realice un componente llamado DropButton.js, el mismo va despacharla las acciones al hacer click en el los filtros

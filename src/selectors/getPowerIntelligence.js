@@ -2,13 +2,13 @@
 
 
 
-export const getPowerIntelligence = (state) => {
+export const getPowerIntelligence = (state, value) => {
 
-    let action = {
-        payload: ''
-    }
+    // let action = {
+    //     payload: ''
+    // }
 
-    let sortIntelligence = action.payload === "minor" ?
+    let sortIntelligence = value === "minor" ?
         state.sort((a, b) => {
             if (a.powerstats.intelligence > b.powerstats.intelligence) {
                 return 1;

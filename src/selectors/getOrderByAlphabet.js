@@ -3,11 +3,9 @@
 
 
 
-export const getOrderByAlphabet = (state) => {
- let action = {
-     payload: 'A-Z'
- }
-    let sortAlphabet = (action.payload === 'A-Z') 
+export const getOrderByAlphabet = (state, value) => {
+
+    let sortAlphabet = (value === 'A-Z') 
     ?
     state.sort((a,b)=> (
         a.name.toLowerCase() > b.name.toLowerCase()) 

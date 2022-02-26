@@ -2,11 +2,9 @@
 
 
 
-export const getPowerPower = (state) => {
- let action = {
-     payload: ''
- }
-    let sortPower = action.payload === "minor" ?
+export const getPowerPower = (state, value) => {
+
+    let sortPower = value === "minor" ?
     state.sort((a, b) => {
         if (a.powerstats.power > b.powerstats.power) {
             return 1;

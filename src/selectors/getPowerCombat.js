@@ -2,11 +2,9 @@
 
 
 
-export const getPowerCombat = (state) => {
- let action = {
-     payload: ''
- }
-    let sortCombat = action.payload === "minor" ?
+export const getPowerCombat = (state, value) => {
+
+    let sortCombat = value === "minor" ?
     state.sort((a, b) => {
         if (a.powerstats.combat > b.powerstats.combat) {
             return 1;

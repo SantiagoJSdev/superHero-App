@@ -2,11 +2,9 @@
 
 
 
-export const getPowerSpeed = (state) => {
- let action = {
-     payload: ''
- }
-    let sortSpeed = action.payload === "minor" ?
+export const getPowerSpeed = (state, value) => {
+
+    let sortSpeed = value === "minor" ?
     state.sort((a, b) => {
         if (a.powerstats.speed > b.powerstats.speed) {
             return 1;

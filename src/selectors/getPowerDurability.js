@@ -2,11 +2,9 @@
 
 
 
-export const getPowerDurability = (state) => {
- let action = {
-     payload: ''
- }
-    let sortDurability = action.payload === "minor" ?
+export const getPowerDurability = ( state, value) => {
+
+    let sortDurability = value === "minor" ?
     state.sort((a, b) => {
         if (a.powerstats.durability > b.powerstats.durability) {
             return 1;
