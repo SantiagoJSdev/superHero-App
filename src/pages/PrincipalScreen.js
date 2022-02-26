@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addData } from "../action/dataAction";
+import { addData, orderByPowerIntelligence, orderByPowerStrength } from "../action/dataAction";
 import { Cards } from "../components/Cards";
 import { InputSearch } from "../components/InputSearch";
 
@@ -13,8 +13,12 @@ export const PrincipalScreen = () => {
   const { heroes } = useSelector(state => state.data);
   useEffect(() => {
     dispatch(addData())
+    
   }, [])
-
+const add = () => {
+  dispatch(orderByPowerIntelligence(heroes))
+  dispatch(orderByPowerStrength())
+}
   
   if (!heroes) {
     return <div className='Loading'>
@@ -46,7 +50,9 @@ export const PrincipalScreen = () => {
 
           </div>
         </section>
-        <footer className="principal-footer"></footer>
+        <footer className="principal-footer">
+          <button onClick={add}>addddddddddddd</button>
+        </footer>
       
       </div>
     </>

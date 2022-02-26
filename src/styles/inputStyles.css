@@ -52,6 +52,7 @@
       margin-left: 9px;
     }
     .createValidation {
+      position: absolute;
       visibility: hidden;
       width: 300px;
       height: 40px;

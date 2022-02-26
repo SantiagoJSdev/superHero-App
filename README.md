@@ -27,3 +27,9 @@ You may also see any lint errors in the console.
 5. Creo otro componente BtnReturn.js que es solo un boton reutilizable para redirigirme a la pagina principal
 
 6. Finalizando la pagina DetailScreen.js la misma me muestra el detalle del heroe reutilizo el mismo componente BigCard.js, mediante las props y las condiciono para mostrar la imagen o la descripcion.
+
+7. cree una pequena validacion para el input con una funcion en la carpeta selectors llamada validator, realice los detalles de la pagina searchScreen, valide el input
+
+8. Tengo dos reducer uno para manejar los pequeños errores y otro reducer para almacenar la data de la api y los heroes que obtengo al filtrar la busqueda con su id, en este punto cree algunas acciones.
+
+9. Realizando los filtros para que el usuario decida el orden en el que aparecerán las habilidades voy a crear una funcion en la carpeta selector llamada getPowerStrength.js que filtra y ordena por habilidad strength y  luego hago una accion para almacenar en mi estado el array ordenado y mostrar los datos.
