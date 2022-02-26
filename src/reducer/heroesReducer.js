@@ -18,39 +18,42 @@ export const heroesReducer = (state = {}, action) => {
                 ...state,
                 heroId: action.payload
             }
-
-
         case types.ORDERBYPOWERINTELLIGENCE:
 
-            let sortPower = action.payload === "minor" ?
-                state.heroes.sort((a, b) => {
-                    if (a.powerstats.intelligence > b.powerstats.intelligence) {
-                        return 1;
-                    }
-                    if (b.powerstats.intelligence > a.powerstats.intelligence) {
-                        return -1;
-                    }
-                    return 0;
-                })
-                :
-                state.heroes.sort((a, b) => {
-                    if (a.powerstats.intelligence > b.powerstats.intelligence) {
-                        return -1;
-                    }
-                    if (b.powerstats.intelligence > a.powerstats.intelligence) {
-                        return 1;
-                    }
-                    return 0;
-                });
             return {
                 ...state,
-                dataGame: sortPower,
-            };
+                heroes: action.payload
+            }
         case types.ORDERBYPOWERSTRENGTH:
             return {
                 ...state,
-                dataStrength: action.payload
+                heroes: action.payload
             }
+        case types.ORDERBYPOWERSPEED:
+            return {
+                ...state,
+                heroes: action.payload
+            }
+        case types.ORDERBYPOWERDURABILITY:
+            return {
+                ...state,
+                heroes: action.payload
+            }
+        case types.ORDERBYPOWERPOWER:
+            return {
+                ...state,
+                heroes: action.payload
+            }
+        case types.ORDERBYPOWERCOMBAT:
+            return {
+                ...state,
+                heroes: action.payload
+            }
+            case types.ORDERBYALPHABET:
+                return {
+                    ...state,
+                    heroes: action.payload
+                }
 
         default:
             return state;

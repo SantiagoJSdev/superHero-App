@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addData, orderByPowerIntelligence, orderByPowerStrength } from "../action/dataAction";
+import { addData, orderByAlphabet, orderByPowerCombat, orderByPowerDurability, orderByPowerIntelligence, orderByPowerPower, orderByPowerSpeed, orderByPowerStrength } from "../action/dataAction";
 import { Cards } from "../components/Cards";
 import { InputSearch } from "../components/InputSearch";
 
@@ -13,11 +13,18 @@ export const PrincipalScreen = () => {
   const { heroes } = useSelector(state => state.data);
   useEffect(() => {
     dispatch(addData())
+    // dispatch(orderByPowerCombat())
     
   }, [])
 const add = () => {
-  dispatch(orderByPowerIntelligence(heroes))
-  dispatch(orderByPowerStrength())
+  // dispatch(orderByPowerIntelligence())
+  // dispatch(orderByPowerStrength())
+  // dispatch(orderByPowerSpeed())
+  // dispatch(orderByPowerDurability())
+  // dispatch(orderByPowerPower())
+  dispatch(orderByPowerCombat())
+  // dispatch(orderByAlphabet())
+ 
 }
   
   if (!heroes) {
