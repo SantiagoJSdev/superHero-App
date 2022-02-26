@@ -117,6 +117,14 @@ export const orderByAlphabet = (value) => {
         })
     }
 }
+export const addDataFilterAppearance = (data) => {
+
+    return {
+        type: types.ADDAPPEARANCE,
+        payload: data
+    }
+    
+}
 export const addError = (error) => {
     return {
         type: types.ADDERROR,

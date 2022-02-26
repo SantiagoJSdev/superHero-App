@@ -65,7 +65,7 @@ export const PrincipalScreen = () => {
           <div className="section-dashboard">
 
             <Cards
-              heroes={heroes}
+              heroes={ heroes }
             />
 
           </div>

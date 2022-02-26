@@ -9,6 +9,7 @@ export const types =  {
     ORDERBYPOWERPOWER: '[POWER] power',
     ORDERBYPOWERCOMBAT: '[COMBAT] combat',
     ORDERBYALPHABET: '[ALPHABET] alphabet',
+    ADDAPPEARANCE: '[ADDAPA] addapp',
     ADDERROR: '[ERROR] error'
 
 };

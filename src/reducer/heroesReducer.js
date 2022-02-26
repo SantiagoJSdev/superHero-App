@@ -49,11 +49,16 @@ export const heroesReducer = (state = {}, action) => {
                 ...state,
                 heroes: action.payload
             }
-            case types.ORDERBYALPHABET:
-                return {
-                    ...state,
-                    heroes: action.payload
-                }
+        case types.ORDERBYALPHABET:
+            return {
+                ...state,
+                heroes: action.payload
+            }
+        case types.ADDAPPEARANCE:
+            return {
+                ...state,
+                dataAppearance: action.payload
+            }
 
         default:
             return state;

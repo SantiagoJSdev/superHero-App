@@ -1,18 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### Page ScreenPrincipal
 
@@ -37,3 +22,5 @@ You may also see any lint errors in the console.
 10. realice todas las funciones desde la carpeta selector para filtrar y ordenar por sus habilidades, ademas filtro alfabeticamente, creo sus acciones para luego ser despachadas cuando el usuario lo requiera.
 
 11. realice un componente llamado DropButton.js, el mismo va despacharla las acciones al hacer click en el los filtros
+
+12. se crea otro componente DropButtonAppearance.js para empesar con los estilos de los botones que nos van a dar la opciones de filtrado.
