@@ -1,7 +1,7 @@
 
 import '../styles/searchScreenStyles.css'
 import queryString from 'query-string';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { getHeroeByName } from '../selectors/getHeroeByName';
 import { useDispatch, useSelector } from 'react-redux';
 import { InputSearch } from '../components/InputSearch';
@@ -59,7 +59,9 @@ export const SearchScreen = () => {
               :
               heroId?.map(hero => (
                 <div key={hero.id}>
+                  <Link to={`/detail/${hero.id}`}>
                   <BigCard name={hero.name} id={hero.id} img={hero.images['sm']} publisher={hero.biography.publisher} />
+                  </Link>
                 </div>
               ))
               

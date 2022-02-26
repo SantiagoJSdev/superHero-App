@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const BtnReturn = () => {
     const navigate = useNavigate();
     const handleReturn = () => {
-        navigate('/')
+        navigate(-1)
       }
   return (
     <>

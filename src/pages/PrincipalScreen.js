@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addData, orderByAlphabet, orderByPowerCombat, orderByPowerDurability, orderByPowerIntelligence, orderByPowerPower, orderByPowerSpeed, orderByPowerStrength } from "../action/dataAction";
 import { Cards } from "../components/Cards";
 import { DropButton } from "../components/DropButton";
+import { DropButtonAppearance } from "../components/DropButtonAppearance";
 import { InputSearch } from "../components/InputSearch";
 
 
@@ -43,12 +44,22 @@ export const PrincipalScreen = () => {
   return (
     <>
       <div className="container-principal">
-        <header className="principal-header"></header>
+        <header className="principal-header">
+          <div className="header-content">
+          <DropButtonAppearance />
+          <InputSearch />
+          </div>
+         
+        </header>
         <section className="principal-section">
           <div className="section-title">
 
-            <InputSearch />
-            <DropButton />
+            
+
+            <div className="buttonsInternos">
+              <DropButton />
+            </div>
+
 
           </div>
           <div className="section-dashboard">
