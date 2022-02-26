@@ -1,10 +1,6 @@
-import { getOrderByAlphabet } from "../selectors/getOrderByAlphabet"
-import { getPowerCombat } from "../selectors/getPowerCombat"
-import { getPowerDurability } from "../selectors/getPowerDurability"
-import { getPowerIntelligence } from "../selectors/getPowerIntelligence"
-import { getPowerPower } from "../selectors/getPowerPower"
-import { getPowerSpeed } from "../selectors/getPowerSpeed"
-import { getPowerStrength } from "../selectors/getPowerStrength"
+
+import { getOrderByAlphabet, getPowerCombat, getPowerDurability, getPowerIntelligence, getPowerPower, getPowerSpeed, getPowerStrength } from "../selectors"
+
 import { types } from "../types/types"
 
 const url = 'https://akabab.github.io/superhero-api/api//all.json'

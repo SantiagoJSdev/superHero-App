@@ -1,0 +1,67 @@
+
+ .drop-button {
+    width: 200px;
+    height: 50px;
+    background: #212940;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   color: white;
+   font-size: 25px;
+   margin-right: 40px;
+   transition: all 1s;
+}
+.drop-button:hover {
+background: #946AFD;
+transition: all 1s;
+}
+.btn-skill {
+   width: 200px;
+    height: 50px;
+    background: #212940;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   color: white;
+   font-size: 25px;
+   transition: all 1s;
+   padding-left: 5px;
+}
+.btn-skill:hover {
+   background: #946AFD;
+   transition: all 1s;
+}
+.content-skill{
+   /* width: 100%;
+   height: 100%; */
+   position: absolute;
+   margin-right: 20px;
+   right: 25px;
+   margin-top: 250px;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 1s;
+}
+.drop-button:hover .content-skill {
+   visibility: visible;
+   transform: translate(20px);
+   transition: all 2s;
+   opacity: 1;
+}
+.block {
+   display: none;
+}
+.skill-active{
+   width: 30px;
+   height: 30px;
+display: flex;
+margin-right: 25px;
+border-radius: 50%;
+border: 2px solid white;
+justify-content: center;
+align-items: center;
+}

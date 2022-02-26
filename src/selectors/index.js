@@ -1,0 +1,16 @@
+
+import { getOrderByAlphabet } from "./getOrderByAlphabet"
+import { getPowerCombat } from "./getPowerCombat"
+import { getPowerDurability } from "./getPowerDurability"
+import { getPowerIntelligence } from "./getPowerIntelligence"
+import { getPowerPower } from "./getPowerPower"
+import { getPowerSpeed } from "./getPowerSpeed"
+import { getPowerStrength } from "./getPowerStrength"
+
+export { getOrderByAlphabet } from "./getOrderByAlphabet"
+export { getPowerCombat } from "./getPowerCombat"
+export { getPowerDurability } from "./getPowerDurability"
+export { getPowerIntelligence } from "./getPowerIntelligence"
+export { getPowerPower } from "./getPowerPower"
+export { getPowerSpeed } from "./getPowerSpeed"
+export { getPowerStrength } from "./getPowerStrength"
