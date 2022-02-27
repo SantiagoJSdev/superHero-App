@@ -1,22 +1,10 @@
 
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { getEyesColor } from '../selectors/getEyesColor';
-import { getGenres, getRace } from '../selectors/getRace';
-import { getHairColor } from '../selectors/getHairColor';
-import '../styles/dropButtonAppearence.css'
+
+import '../styles/dropButtonAppearence.css';
 
 export const DropButtonAppearance = () => {
     const navigate = useNavigate();
-    const { heroes } = useSelector(state => state.data);
-    //     let resul =[]
-    //    console.log(heroes.forEach(h => (!resul.includes(h.appearance.eyeColor) &&  resul.push(h.appearance.eyeColor)))) 
-    // console.log(resul)
-    let race = getRace(heroes)
-    let eyesColor = getEyesColor(heroes)
-    let hairColor = getHairColor(heroes)
-    // console.log(race)
 
     const handleClick = (name) => {
         navigate(`/appearence?q=${name}`)

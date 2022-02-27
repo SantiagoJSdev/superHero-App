@@ -1,16 +1,15 @@
-
-import '../styles/searchScreenStyles.css'
-import queryString from 'query-string';
-import { Link, useLocation } from 'react-router-dom';
-import { getHeroeByName } from '../selectors/getHeroeByName';
-import { useDispatch, useSelector } from 'react-redux';
-import { InputSearch } from '../components/InputSearch';
 import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useLocation } from 'react-router-dom';
+
+import queryString from 'query-string';
+import { getHeroeByName } from '../selectors/getHeroeByName';
+import { InputSearch } from '../components/InputSearch';
 import { addData, heroById } from '../action/dataAction';
 import { BigCard } from '../components/BigCard';
-import { Btn, BtnReturn } from '../components/BtnReturn';
+import { BtnReturn } from '../components/BtnReturn';
 
-
+import '../styles/searchScreenStyles.css'
 
 export const SearchScreen = () => {
 
@@ -20,9 +19,7 @@ export const SearchScreen = () => {
   const {data, error} = useSelector(state => state);
   const {heroes, heroId } = data;
 
-  
   const { q: name } = queryString.parse(location.search) || '';
-  
   
   useEffect(() => {
     let data = (getHeroeByName(heroes, name))

@@ -123,7 +123,7 @@ export const addDataFilterAppearance = (data) => {
         type: types.ADDAPPEARANCE,
         payload: data
     }
-    
+
 }
 export const addWeight = (data) => {
 
@@ -131,7 +131,7 @@ export const addWeight = (data) => {
         type: types.ADDWEIGHT,
         payload: data
     }
-    
+
 }
 export const addHeight = (data) => {
 
@@ -139,7 +139,7 @@ export const addHeight = (data) => {
         type: types.ADDHEIGHT,
         payload: data
     }
-    
+
 }
 export const addError = (error) => {
     return {

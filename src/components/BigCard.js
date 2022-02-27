@@ -4,7 +4,6 @@ export const BigCard = ({ name, img, publisher, description = '', work, appearan
 
     return (
 
-
         <div className="contain-principal">
             <div className="contain card">
                 <div className="card__face card__face--front">

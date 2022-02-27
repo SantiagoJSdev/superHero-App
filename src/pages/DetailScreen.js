@@ -1,12 +1,14 @@
 
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
+
 import { addData } from '../action/dataAction';
 import { BigCard } from '../components/BigCard';
 import { BtnReturn } from '../components/BtnReturn';
 import { getHeroesById } from '../selectors/getHeroesById';
-import '../styles/detailStyles.css'
+
+import '../styles/detailStyles.css';
 
 export const DetailScreen = () => {
 

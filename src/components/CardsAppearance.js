@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import '../styles/cardsAppearanceStyles.css'
 
 export const CardsAppearance = ({ dataAppearance }) => {
-
 
     const [page, setpage] = useState(1);
     const maximo = (4);
@@ -17,19 +17,10 @@ export const CardsAppearance = ({ dataAppearance }) => {
     if (page === 0) {
         setpage(1)
     }
-
-
-
     return <>
-
-
         {
-
-
             (dataAppearance.length > 4)
-
                 ?
-
                 dataAppearance?.slice((page - 1) * maximo, ((page - 1) * maximo) + maximo).map((ele, i) => (
                     <div key={ele.id}>
                         <div onClick={decrement} className='arrow-1'></div>

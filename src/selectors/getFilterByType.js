@@ -20,9 +20,6 @@ export const getFilterByType = (type = '', value, heroes) => {
         case 'Female':
             resp = heroes.filter(hero => hero.appearance.gender === 'Female')
             break;
-        // case 'height':
-        //     resp = heroes.filter(hero => hero.appearance.gender === 'Female')
-        //     break;
         default:
             break;
     }

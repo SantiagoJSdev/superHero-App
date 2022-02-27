@@ -25,4 +25,6 @@
 
 12. se crea otro componente DropButtonAppearance.js para empesar con los estilos de los botones que nos van a dar la opciones de filtrado.
 
-13. hice otra ruta que seria la pagina AppearenceScreen.js para mostrar el detalle de los diferentes filtros de apariencia.
+13. hice otra ruta que seria la pagina AppearenceScreen.js para mostrar y realizar el detalle de los diferentes filtros de apariencia.
+
+14. hice otro componente CardsAppearance.js para mostrar las cards de los elementos filtrados en la pagina AppearenceScreen.js

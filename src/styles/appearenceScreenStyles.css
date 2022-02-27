@@ -55,6 +55,10 @@ align-items: center;
     align-items: center;
     gap: 15px;
 }
+.cards-interno > a {
+
+    text-decoration: none;
+}
 .appearence-items{
 cursor: pointer;
 }

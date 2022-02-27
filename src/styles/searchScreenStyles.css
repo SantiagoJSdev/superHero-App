@@ -17,6 +17,7 @@ body {
 .search-interno{
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 .inputCard {
@@ -36,7 +37,7 @@ body {
     height: 50px;
     display: flex;
     justify-content: end;
-    
+
 }
 .search-button{
     width: 130px;

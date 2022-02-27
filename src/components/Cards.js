@@ -1,12 +1,12 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import '../styles/carsStyles.css'
 
 
 export const Cards = ({ heroes }) => {
 
-   
     const [page, setpage] = useState(1);
     const maximo = (4);
 
@@ -19,7 +19,6 @@ export const Cards = ({ heroes }) => {
     if (page === 0) {
         setpage(1)
     }
-
 
     return (
 
