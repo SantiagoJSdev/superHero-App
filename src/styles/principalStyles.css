@@ -83,6 +83,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+   
  
 }
 
@@ -126,3 +127,17 @@ body {
 }
 /* /////////////////////////////
  */
+ @media (max-width: 1645px) {
+    .section-dashboard {
+        width: 80%;
+        height: 1200px;
+     
+    }
+}
+@media (max-width: 984px) {
+    .section-dashboard {
+        width: 80%;
+        height: 2000px;
+     
+    }
+}
