@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addData, orderByAlphabet, orderByPowerCombat, orderByPowerDurability, orderByPowerIntelligence, orderByPowerPower, orderByPowerSpeed, orderByPowerStrength } from "../action/dataAction";
+import { addData, addDataFilterAppearance, orderByAlphabet, orderByPowerCombat, orderByPowerDurability, orderByPowerIntelligence, orderByPowerPower, orderByPowerSpeed, orderByPowerStrength } from "../action/dataAction";
 import { Cards } from "../components/Cards";
 import { DropButton } from "../components/DropButton";
 import { DropButtonAppearance } from "../components/DropButtonAppearance";
 import { InputSearch } from "../components/InputSearch";
+import { getMayorMenor } from "../selectors/getMayorMenor";
 
 
 import '../styles/principalStyles.css'
@@ -16,7 +17,7 @@ export const PrincipalScreen = () => {
   const { heroes } = useSelector(state => state.data);
   useEffect(() => {
     dispatch(addData())
-    // dispatch(orderByPowerCombat())
+    dispatch(addDataFilterAppearance([]))
 
   }, [])
   const add = () => {
@@ -25,9 +26,9 @@ export const PrincipalScreen = () => {
     // dispatch(orderByPowerSpeed())
     // dispatch(orderByPowerDurability())
     // dispatch(orderByPowerPower())
-    dispatch(orderByPowerCombat())
+    // dispatch(orderByPowerCombat())
     // dispatch(orderByAlphabet())
-
+    console.log(getMayorMenor('Less', heroes))
   }
 
   if (!heroes) {

@@ -27,8 +27,8 @@ export const DropButtonAppearance = () => {
             <div className="content-appearence">
                 <div className="btn-appearence">Gender
                     <div className='content-gender'>
-                        <div className="btn-appearence">Male</div>
-                        <div className="btn-appearence">Female</div>
+                        <div onClick={()=> handleClick('Male')} className="btn-appearence">Male</div>
+                        <div onClick={()=> handleClick('Female')} className="btn-appearence">Female</div>
                     </div>
 
                 </div>

@@ -125,6 +125,22 @@ export const addDataFilterAppearance = (data) => {
     }
     
 }
+export const addWeight = (data) => {
+
+    return {
+        type: types.ADDWEIGHT,
+        payload: data
+    }
+    
+}
+export const addHeight = (data) => {
+
+    return {
+        type: types.ADDHEIGHT,
+        payload: data
+    }
+    
+}
 export const addError = (error) => {
     return {
         type: types.ADDERROR,

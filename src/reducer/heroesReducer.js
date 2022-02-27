@@ -59,7 +59,16 @@ export const heroesReducer = (state = {}, action) => {
                 ...state,
                 dataAppearance: action.payload
             }
-
+        case types.ADDWEIGHT:
+            return {
+                ...state,
+                dataAppearance: action.payload
+            }
+            case types.ADDHEIGHT:
+                return {
+                    ...state,
+                    dataAppearance: action.payload
+                }
         default:
             return state;
     }

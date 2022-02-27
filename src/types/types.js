@@ -10,6 +10,8 @@ export const types =  {
     ORDERBYPOWERCOMBAT: '[COMBAT] combat',
     ORDERBYALPHABET: '[ALPHABET] alphabet',
     ADDAPPEARANCE: '[ADDAPA] addapp',
+    ADDWEIGHT: '[ADDWEIGHT] weight',
+    ADDHEIGHT: '[HEIGHT] height',
     ADDERROR: '[ERROR] error'
 
 };

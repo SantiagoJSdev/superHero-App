@@ -24,3 +24,5 @@
 11. realice un componente llamado DropButton.js, el mismo va despacharla las acciones al hacer click en el los filtros
 
 12. se crea otro componente DropButtonAppearance.js para empesar con los estilos de los botones que nos van a dar la opciones de filtrado.
+
+13. hice otra ruta que seria la pagina AppearenceScreen.js para mostrar el detalle de los diferentes filtros de apariencia.
